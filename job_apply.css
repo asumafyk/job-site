@@ -1,0 +1,202 @@
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+.hero {
+  background: #027bf3;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+.highlight {
+  color: #ffd016;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+/* 募集の売り */
+.points {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+.point {
+  border: 2px solid #0080ff;
+  padding: 15px;
+  border-radius: 8px;
+  width: 45%;
+}
+/* 募集要項の表 */
+.info-title {
+  text-align: center;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+th {
+  background: #f4f4f4;
+  width: 30%;
+}
+/* 応募セクション全体のレイアウト */
+.contact-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+.contact-title {
+  color: #0066cc;
+}
+.contact-text {
+  margin-bottom: 20px;
+}
+.contact-box {
+  margin-top: 30px;
+}
+.emil-label {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+/* メールリンクのボタン風装飾 */
+.email-link {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ffd428; /* 目立つ黄色 */
+  color: #004284; /* 濃い紺色 */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: 2px solid #0582ff;
+  transition: 0.3s;
+}
+.email-link:hover {
+  background-color: #002d5b;
+  color: #fff;
+  transform: translateY(-2px); /* 少し浮き上がる動き */
+}
+.copy-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.email-display {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #002d5b;
+  background: #eef2f6;
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+/* 記入例全体の枠 */
+.contact-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+.email-template {
+  margin-top: 0px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  background-color: #fffde7;
+  border: 1px solid #ffcc00;
+  border-radius: 8px;
+  padding: 20px;
+}
+.template-heading {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+.template-item {
+  margin-bottom: 25px;
+}
+.type-label {
+  font-weight: bold;
+  color: #002d5b;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+.template-content {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.body-text {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed #eee;
+  color: #666;
+}
+/* スマホ向けのレスポンシブ設定 */
+@media (max-width: 600px) {
+  /* 1. 全体の余白を少し狭めて画面を広く使う */
+  body {
+    font-size: 14px; /* 文字を少し小さくして情報量を確保 */
+  }
+  .hero h1 {
+    font-size: 1.5rem; /* タイトルがはみ出さないように調整 */
+    padding: 0 10px;
+  }
+  /* 2. 特長（ポイント）を縦並びにする */
+  .points {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .point {
+    width: 90%; /* 横幅いっぱいに広げる */
+    margin: 0 auto;
+  }
+  /* 3. 募集要項のテーブルをスマホで見やすく */
+  .info table, 
+  .info thead, 
+  .info tbody, 
+  .info th, 
+  .info td, 
+  .info tr {
+    display: block; /* 表の形式を崩して縦に並べる */
+    width: 100%;
+  }
+  .info th {
+    background-color: #002d5b;
+    color: white;
+    border-bottom: none;
+    padding: 8px 15px;
+  }
+  .info td {
+    border-top: none;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    background-color: #fff;
+  }
+  /* 4. コピーボタンを押しやすく大きくする */
+  .email-link {
+    width: 100%; /* ボタンを横幅いっぱいにする */
+    font-size: 1.1rem;
+    padding: 18px; /* タップしやすいように厚みを持たせる */
+  }
+  .email-display {
+    font-size: 1rem;
+    word-break: break-all; /* 長いアドレスがはみ出さないように */
+  }
+  /* 5. 入力ガイドの枠を画面端まで広げる */
+  .email-template {
+    width: 95%;
+    padding: 15px;
+  }
+}
