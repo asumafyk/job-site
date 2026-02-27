@@ -14,6 +14,9 @@ body {
   font-weight: bold;
   font-size: 1.2rem;
 }
+.sp-only {
+  display: none; /* スマホの時だけ改行を有効にする */
+}
 /* 募集の売り */
 .points {
   display: flex;
@@ -149,8 +152,14 @@ th {
     font-size: 14px; /* 文字を少し小さくして情報量を確保 */
   }
   .hero h1 {
-    font-size: 1.5rem; /* タイトルがはみ出さないように調整 */
+    font-size: 1.4rem; /* タイトルがはみ出さないように調整 */
     padding: 0 10px;
+  }
+  .highlight, .type-label {
+    display: inline-block; /* 単語の塊を維持しやすくなります */
+  }
+  .sp-only {
+    display: inline; /* スマホの時だけ改行を有効にする */
   }
   /* 2. 特長（ポイント）を縦並びにする */
   .points {
@@ -184,8 +193,12 @@ th {
     padding: 10px 15px;
     background-color: #fff;
   }
+  .contact-text {
+    font-size: 1.2rem;
+  }
   /* 4. コピーボタンを押しやすく大きくする */
-  .email-link {
+  .email-link,
+  .email-label {
     width: 100%; /* ボタンを横幅いっぱいにする */
     font-size: 1.1rem;
     padding: 18px; /* タップしやすいように厚みを持たせる */
