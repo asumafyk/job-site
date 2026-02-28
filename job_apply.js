@@ -1,7 +1,7 @@
 document.getElementById('question-email-btn').addEventListener('click', function(e) {
     e.preventDefault(); // ページが一番上に飛ぶのを防ぐ
     
-    const email = "sovering.asuma@gmail.com"; // 送信先のアドレス
+    const email = "oshishishaojieweijingyanzigena@gmail.com"; // 送信先のアドレス
     const subject = "【質問等】配管・鍛冶工の件";
     const body = "お名前：\nお問い合わせ内容：";
     
@@ -12,7 +12,7 @@ document.getElementById('question-email-btn').addEventListener('click', function
 document.getElementById('apply-email-btn').addEventListener('click', function(e) {
     e.preventDefault(); // ページが一番上に飛ぶのを防ぐ
     
-    const email = "sovering.asuma@gmail.com"; // 送信先のアドレス
+    const email = "oshishishaojieweijingyanzigena@gmail.com"; // 送信先のアドレス
     const subject = "【求人応募】配管・鍛冶工の件";
     const body = "お名前：\nお電話番号：\n希望期間：\nメッセージ：";
     
