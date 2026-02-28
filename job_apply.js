@@ -3,7 +3,7 @@ document.getElementById('question-email-btn').addEventListener('click', function
     
     const email = "oshishishaojieweijingyanzigena@gmail.com"; // 送信先のアドレス
     const subject = "【質問等】配管・鍛冶工の件";
-    const body = "お名前：\nお問い合わせ内容：";
+    const body = "お名前：\nお電話番号：\n※電話での連絡を希望される方のみ\nお問い合わせ内容：";
     
     // ブラウザが自動で「エンコード」に変換してメールを立ち上げます
     location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
